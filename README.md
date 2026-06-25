@@ -1,6 +1,6 @@
-# Checking Up Backend - Backend API
+# AKYSB Karimabad Area Backend - Backend API
 
-This is the backend API for the **Checking Up Backend** application. It provides
+This is the backend API for the **AKYSB Karimabad Area Backend** application. It provides
 authentication, database integration, stripe account setup, payments, mailing, and other core
 backend services.
 
@@ -25,7 +25,7 @@ backend services.
 ## Installation
 
     git clone <your-repository-url>
-    cd CheckingUp-Backend
+    cd AkysbKarimabadArea
     npm install
 
 ## Environment Variables
@@ -34,10 +34,10 @@ Create a `.env` file in the root directory and add the following:
 
     PORT=8080
     BASE_URL=<base_url>
-    APP_NAME=checkingup
+    APP_NAME=akysb
 
     DB_CONNECTION_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net
-    DB_NAME=checkingup
+    DB_NAME=akysb
 
     JWT_SECRET_KEY=<your_jwt_secret_here>
 

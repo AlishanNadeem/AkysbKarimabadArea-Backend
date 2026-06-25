@@ -265,12 +265,12 @@ export const forgetPassword = async (req, res, next) => {
 
         await sendMail({
             to: user.email,
-            subject: "Password Reset Request – Checking Up",
+            subject: "Password Reset Request – AKYSB Karimabad Area",
             template: "password_reset_code",
             template_vars: {
                 name: user.name,
                 verification_code: otp,
-                app_name: "Checking Up",
+                app_name: "AKYSB Karimabad Area",
                 logo_url: "https://checkingup.projectstagingzone.com/uploads/logo.png"
             }
         })
