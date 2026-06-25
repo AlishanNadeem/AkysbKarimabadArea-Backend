@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'
 import app from './src/app.js'
+import connectDB from './src/config/db.js'
 import logger from './src/config/logger.js'
 import { makeFolders } from './src/helpers/folder.js'
 
@@ -12,6 +13,7 @@ const serverHandler = async () => {
 
         logger.info(`Server started 🚀 Running on port ${PORT}.`)
 
+        await connectDB()
         makeFolders()
 
     } catch (e) {
